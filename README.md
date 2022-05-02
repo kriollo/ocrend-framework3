@@ -10,7 +10,7 @@
 </p>
 
 ## Introducción
-### ¿Qué es Ocrend Framework 3?
+### ¿Qué es Ocrend Framework 3? (compatible con PHP8)
 
 Es un framework sencillo y robusto, escrito en **PHP 7** que utiliza la arquitectura **MVC** y componentes de symfony como base de su aplicación en el desarrollo web, adicionalmente pretende acelerar el proceso de desarrollo con unas cuantas herramientas. La curva de aprendizaje es bastante baja, el concepto del framework es ofrecer una arquitectura de sencillo manejo, inclusive para aquellos que jamás han programado utilizando MVC.
 

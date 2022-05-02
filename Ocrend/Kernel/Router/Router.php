@@ -97,7 +97,7 @@ final class Router implements IRouter {
      * @throws \RuntimeException si la regla no existe
      * @return void
     */
-    final private function setCollectionRule(string $index, string $rule) {
+    private function setCollectionRule(string $index, string $rule) {
         # Verificar si la regla existe
         if (!in_array($rule, self::RULES)) {
             throw new \RuntimeException('La regla ' . $rule . ' no existe.');
@@ -109,7 +109,7 @@ final class Router implements IRouter {
     /**
      * Verifica las peticiones por defecto
     */
-    final private function checkRequests()  {
+    private function checkRequests()  {
         # Verificar si existe peticiones
         if (null !== $this->requestUri) {
             $this->real_request = explode('/', $this->requestUri);
@@ -219,7 +219,7 @@ final class Router implements IRouter {
      * 
      * @return void
      */
-    final private function loadController()  {
+    private function loadController()  {
         # Definir controlador
         if (null != ($controller = $this->getController())) {
             $controller = $controller . 'Controller';
@@ -242,7 +242,7 @@ final class Router implements IRouter {
      * 
      * @return void
      */
-    final private function productionError() {
+    private function productionError() {
         global $http;
 
         header($http->server->get('SERVER_PROTOCOL') . ' 500 Internal Server Error', true, 500);

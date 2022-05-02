@@ -41,7 +41,7 @@ build:
   name: Ocrend Framework 3
   url: http://127.0.0.10/proyectos/ocrend3/
   timezone: America/Caracas
-  version: 3.0.1
+  version: 3.1.1
 
 # Configuración de cookies
 sessions:
